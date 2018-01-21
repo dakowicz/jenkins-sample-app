@@ -1,0 +1,1 @@
+create tablespace JENKINS_DATA datafile '/u01/app/oracle/oradata/XE/jenkins_data.dbf' size 1M autoextend on next 512k maxsize 2G;

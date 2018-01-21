@@ -1,0 +1,9 @@
+version: '2'
+services:
+  db:
+    build: db/.
+    image: jenkins_db:oracle
+    container_name: "$DB_CONTAINER_NAME"
+    ports:
+      - "$DB_PORT1:1521"
+      - "$DB_PORT2:22"
