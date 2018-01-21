@@ -31,6 +31,7 @@ allprojects {
 	apply plugin: 'java'
 	apply plugin: 'groovy'
 	apply plugin: 'checkstyle'
+	apply plugin: 'jacoco'
 	apply plugin: 'net.linguica.maven-settings'
 	apply plugin: 'com.bmuschko.nexus'
 
@@ -57,6 +58,10 @@ allprojects {
 	checkstyle {
 		configFile = rootProject.file('checkstyle.xml')
 		toolVersion = '7.0'
+	}
+
+	jacoco {
+		toolVersion = "0.7.9"
 	}
 }
 
