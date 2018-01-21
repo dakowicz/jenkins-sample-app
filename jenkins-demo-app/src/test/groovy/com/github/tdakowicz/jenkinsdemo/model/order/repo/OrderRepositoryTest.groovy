@@ -17,10 +17,29 @@ class OrderRepositoryTest extends BaseIntegrationTest {
 
 		when:
 		orderRepository.save(order)
-		entityManager.flush()
 
 		then:
 		def orders = orderRepository.findAll()
+		orders
+		orders.size() == 1
+		with(orders.first()) {
+			description == "ABC"
+			productId == 1234L
+		}
+	}
+
+	def "should find an order by description"() {
+		given:
+		Order order = new Order()
+		order.description = "ABC"
+		order.productId = 1234L
+		orderRepository.save(order)
+
+		when:
+		def orders = orderRepository.findByDescription('ABC')
+
+		then:
+		orders
 		orders.size() == 1
 		with(orders.first()) {
 			description == "ABC"
