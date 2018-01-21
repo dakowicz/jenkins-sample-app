@@ -1,0 +1,1698 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-1">
+        <createSequence cacheSize="20" cycle="false" incrementBy="1" sequenceName="BUSINESS_PARTY_B_ACC_ID_SEQ" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-2">
+        <createSequence cacheSize="20" cycle="false" incrementBy="1" sequenceName="BUSINESS_PARTY_CONSENT_ID_SEQ" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-3">
+        <createSequence cacheSize="20" cycle="false" incrementBy="1" sequenceName="BUSINESS_PARTY_CONTACT_ID_SEQ" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-4">
+        <createSequence cacheSize="20" cycle="false" incrementBy="1" sequenceName="BUSINESS_PARTY_DOCUMENT_ID_SEQ" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-5">
+        <createSequence cacheSize="20" cycle="false" incrementBy="1" sequenceName="BUSINESS_PARTY_ID_SEQ" startValue="3001"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-6">
+        <createSequence cacheSize="20" cycle="false" incrementBy="1" sequenceName="BUSINESS_PARTY_LOCATION_ID_SEQ" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-7">
+        <createSequence cacheSize="20" cycle="false" incrementBy="1" sequenceName="BUSINESS_PARTY_RATING_ID_SEQ" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-8">
+        <createSequence cacheSize="20" cycle="false" incrementBy="1" sequenceName="BUSINESS_PARTY_RELATION_ID_SEQ" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-9">
+        <createSequence cacheSize="20" cycle="false" incrementBy="1" sequenceName="BUSINESS_PRODUCER_ID_SEQ" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-10">
+        <createSequence cacheSize="20" cycle="false" incrementBy="1" sequenceName="HIBERNATE_SEQUENCE" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-11">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_ADDRESS" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-12">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_CONSENT" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-13">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_CONTACT" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-14">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_DOCUMENT" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-15">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_E_DE_INDEX_PARTY" startValue="2001"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-16">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_E_GOLDEN_PARTY_CREATED" startValue="2001"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-17">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_E_MIG_NOTIF_FAILED" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-18">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_E_PARTY_CLUSTER_CREATED" startValue="2001"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-19">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_E_SOWA_CREATED" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-20">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_E_SOWA_DELETED" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-21">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_E_SOWA_UPDATED" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-22">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_GR_CONSENT" startValue="2001"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-23">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_GR_CONTACT" startValue="2001"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-24">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_GR_DOCUMENT" startValue="2001"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-25">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_GR_LOCATION" startValue="2001"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-26">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_GR_PARTY" startValue="2001"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-27">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_GR_RATING" startValue="2001"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-28">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_GR_RELATION" startValue="2001"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-29">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_PARTY" startValue="1001"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-30">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_PARTY_BANK_ACCOUNT" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-31">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_PARTY_LOCATION" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-32">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_PARTY_RATING" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-33">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_PARTY_RELATION" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-34">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_PROCESS" startValue="1001"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-35">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_PRODUCER" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-36">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_PROD_COMMISSION" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-37">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_PROD_NONQUOTA_PERMISSION" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-38">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_PROD_PAYMENT_METHOD" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-39">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_PROD_PERMISSION" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-40">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_PROD_SUPPORT_PARTY" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-41">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_SETTLEMENT" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-42">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_SETTLEMENT_COMPETITION" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-43">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_SETTLEMENT_DETAIL" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-44">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_SETTLEMENT_PRODUCER_STATE" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-45">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_SETTLEMENT_TRANSACTION" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-46">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_SOWA_ATTRIBUTE" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-47">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_SOWA_PARTY" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-48">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_SOWA_POLICY" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-49">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_SOWA_PREV_RISK" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-50">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_SOWA_PREV_RISK_ATTRIBUTE" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-51">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_SOWA_RISK" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-52">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_SOWA_RISK_ATTRIBUTE" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-53">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_SOWA_RISK_VARIANT" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-54">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_SOWA_VARIANT" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-55">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_SOWA_VARIANT_ATTRIBUTE" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-56">
+        <createSequence cacheSize="20" cycle="false" incrementBy="50" sequenceName="SEQ_VERSION" startValue="1"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-57">
+        <createTable tableName="ADDRESS">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="HOGA_ID" type="NUMBER(38, 0)"/>
+            <column name="TERYT_ID" type="VARCHAR2(20)"/>
+            <column name="COUNTRY_CODE" type="VARCHAR2(2)"/>
+            <column name="POSTAL_CODE" type="VARCHAR2(6)"/>
+            <column name="POST_OFFICE" type="VARCHAR2(50)"/>
+            <column name="PROVINCE" type="VARCHAR2(50)"/>
+            <column name="CITY" type="VARCHAR2(50)"/>
+            <column name="STREET" type="VARCHAR2(50)"/>
+            <column name="HOUSE_NUMBER" type="VARCHAR2(50)"/>
+            <column name="DOOR_NUMBER" type="VARCHAR2(50)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-58">
+        <createTable tableName="CONSENT">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PARTY_ID" type="NUMBER(38, 0)"/>
+            <column name="CODE" type="VARCHAR2(20)"/>
+            <column name="VALUE" type="NUMBER(1, 0)"/>
+            <column name="DATE_FROM" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DATE_TO" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CONSENT_ID" type="NUMBER(38, 0)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-59">
+        <createTable tableName="CONTACT">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PARTY_ID" type="NUMBER(38, 0)"/>
+            <column name="TYPE" type="VARCHAR2(20)"/>
+            <column name="VALUE" type="VARCHAR2(100)"/>
+            <column name="IS_DEFAULT" type="NUMBER(1, 0)"/>
+            <column name="DATE_FROM" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DATE_TO" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CONTACT_ID" type="NUMBER(38, 0)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ROLE" type="VARCHAR2(255)"/>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-60">
+        <createTable tableName="DOCUMENT">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PARTY_ID" type="NUMBER(38, 0)"/>
+            <column name="DOC_TYPE" type="VARCHAR2(20)"/>
+            <column name="DOC_NUMBER" type="VARCHAR2(100)"/>
+            <column name="ISSUE_DATE" type="date"/>
+            <column name="EXPIRATION_DATE" type="date"/>
+            <column name="DATE_FROM" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DATE_TO" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DOCUMENT_ID" type="NUMBER(38, 0)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-61">
+        <createTable tableName="EVENT_DE_INDEX_PARTY">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PARTY_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="EVENT_DATE" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="COUNTER" type="NUMBER(38, 0)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-62">
+        <createTable tableName="EVENT_GOLDEN_PARTY_CREATED">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ORIGIN_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="EVENT_DATE" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="COUNTER" type="NUMBER(38, 0)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-64">
+        <createTable tableName="EVENT_PARTY_CLUSTER_CREATED">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PARTY_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PARENT_PARTY_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="EVENT_DATE" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="COUNTER" type="NUMBER(38, 0)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-65">
+        <createTable tableName="EVENT_SOWA_CREATED">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="POLICY_NUMBER" type="VARCHAR2(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="EVENT_DATE" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="COUNTER" type="NUMBER(38, 0)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-66">
+        <createTable tableName="EVENT_SOWA_DELETED">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="POLICY_NUMBER" type="VARCHAR2(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="EVENT_DATE" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="COUNTER" type="NUMBER(38, 0)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-67">
+        <createTable tableName="EVENT_SOWA_UPDATED">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="POLICY_NUMBER" type="VARCHAR2(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="EVENT_DATE" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="COUNTER" type="NUMBER(38, 0)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-68">
+        <createTable tableName="GR_CONSENT">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="GR_PARTY_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ORIGIN_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-69">
+        <createTable tableName="GR_CONTACT">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="GR_PARTY_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ORIGIN_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-70">
+        <createTable tableName="GR_DOCUMENT">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="GR_PARTY_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ORIGIN_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-71">
+        <createTable tableName="GR_LOCATION">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="GR_PARTY_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ORIGIN_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-72">
+        <createTable tableName="GR_PARTY">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ORIGIN_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DATE_FROM" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DATE_TO" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-73">
+        <createTable tableName="GR_RATING">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="GR_PARTY_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ORIGIN_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-74">
+        <createTable tableName="GR_RELATION">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="GR_PARTY_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ORIGIN_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-75">
+        <createTable tableName="HIBERNATE_SEQUENCES">
+            <column name="SEQUENCE_NAME" type="VARCHAR2(255)"/>
+            <column name="SEQUENCE_NEXT_HI_VALUE" type="NUMBER(10, 0)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-76">
+        <createTable tableName="PARTY">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="EXTERNAL_ID" type="VARCHAR2(50)"/>
+            <column name="LABEL" type="VARCHAR2(255)"/>
+            <column name="NIP" type="VARCHAR2(50)"/>
+            <column name="PESEL" type="VARCHAR2(50)"/>
+            <column name="REGON" type="VARCHAR2(50)"/>
+            <column name="IS_AGENT" type="NUMBER(1, 0)"/>
+            <column name="IS_EMPLOYEE" type="NUMBER(1, 0)"/>
+            <column name="IS_VIP" type="NUMBER(1, 0)"/>
+            <column name="IS_PLATINUM" type="NUMBER(1, 0)"/>
+            <column name="DATE_FROM" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DATE_TO" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="FIRST_NAME" type="VARCHAR2(100)"/>
+            <column name="SECOND_NAME" type="VARCHAR2(255)"/>
+            <column name="LAST_NAME" type="VARCHAR2(100)"/>
+            <column name="FAMILY_NAME" type="VARCHAR2(100)"/>
+            <column name="GENDER_CODE" type="VARCHAR2(1)"/>
+            <column name="BIRTH_DATE" type="date"/>
+            <column name="NATIONALITY" type="VARCHAR2(2)"/>
+            <column name="OCCUPATION" type="VARCHAR2(20)"/>
+            <column name="MARITAL_STATUS" type="VARCHAR2(50)"/>
+            <column name="NAME" type="NVARCHAR2(100)"/>
+            <column name="SHORT_NAME" type="NVARCHAR2(50)"/>
+            <column name="REGISTRATION_DATE" type="date"/>
+            <column name="PKD_CODE" type="VARCHAR2(20)"/>
+            <column name="PARTY_ID" type="NUMBER(15, 0)"/>
+            <column name="EXTERNAL_SYSTEM" type="VARCHAR2(255)"/>
+            <column name="TYPE" type="VARCHAR2(255)"/>
+            <column name="RAU_NUMBER" type="VARCHAR2(10)"/>
+            <column name="IS_RESTRICTED" type="NUMBER(1, 0)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="ORGANIZATION_TYPE" type="VARCHAR2(255)"/>
+            <column defaultValueNumeric="0" name="STRUCTURE_IMPORT" type="NUMBER(1, 0)"/>
+            <column name="IS_TERMINAL_WARTA" type="NUMBER(1, 0)"/>
+            <column name="IS_BAN_COLLECTION" type="NUMBER(1, 0)"/>
+            <column name="IS_EXCLUSIVE" type="NUMBER(1, 0)"/>
+            <column name="IS_AVIP" type="NUMBER(1, 0)"/>
+            <column name="IS_CUSTOMER" type="NUMBER(1, 0)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-77">
+        <createTable tableName="PARTY_BANK_ACCOUNT">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DATE_FROM" type="TIMESTAMP(3)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DATE_TO" type="TIMESTAMP(3)"/>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="BANK_ACCOUNT_ID" type="NUMBER(15, 0)"/>
+            <column name="BANK_ACCOUNT_NUMBER" type="VARCHAR2(50)"/>
+            <column name="BANK_ACCOUNT_TYPE" type="VARCHAR2(20)"/>
+            <column name="PARTY_ID" type="NUMBER(15, 0)"/>
+            <column name="IS_DEFAULT" type="NUMBER(1, 0)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-78">
+        <createTable tableName="PARTY_CLUSTER">
+            <column name="PARENT_PARTY_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PARTY_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-79">
+        <createTable tableName="PARTY_LOCATION">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PARTY_ID" type="NUMBER(38, 0)"/>
+            <column name="ADDRESS_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ADDRESS_TYPE" type="VARCHAR2(20)"/>
+            <column name="IS_DEFAULT" type="NUMBER(1, 0)"/>
+            <column name="DATE_FROM" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DATE_TO" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PARTY_LOCATION_ID" type="NUMBER(38, 0)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="IS_PRIMARY" type="NUMBER(1, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-80">
+        <createTable tableName="PARTY_RATING">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PARTY_ID" type="NUMBER(38, 0)"/>
+            <column name="RATING_CODE" type="VARCHAR2(20)"/>
+            <column name="RATING_VALUE" type="VARCHAR2(50)"/>
+            <column name="DATE_FROM" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DATE_TO" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="RATING_TYPE" type="VARCHAR2(20)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="RATING_ID" type="NUMBER(38, 0)"/>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="RATING_NOTE" type="VARCHAR2(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-81">
+        <createTable tableName="PARTY_RELATION">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PARTY_ID" type="NUMBER(38, 0)"/>
+            <column name="RELATED_PARTY_ID" type="NUMBER(38, 0)"/>
+            <column name="TYPE" type="VARCHAR2(20)"/>
+            <column name="DATE_FROM" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DATE_TO" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PARTY_RELATION_ID" type="NUMBER(38, 0)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-82">
+        <createTable tableName="PROCESS">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PROCESS_NAME" type="VARCHAR2(50)"/>
+            <column name="STATE" type="VARCHAR2(50)"/>
+            <column name="ERROR_MESSAGE" type="VARCHAR2(255)"/>
+            <column name="START_DATE" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="END_DATE" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="PROCESS_UID" type="VARCHAR2(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-83">
+        <createTable tableName="PRODUCER">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PRODUCER_ID" type="NUMBER(38, 0)"/>
+            <column name="PARTY_ID" type="NUMBER(38, 0)"/>
+            <column name="UNIT_CODE" type="VARCHAR2(20)"/>
+            <column name="PRODUCER_TYPE" type="VARCHAR2(20)"/>
+            <column name="PRODUCER_NUMBER" type="VARCHAR2(50)"/>
+            <column name="CONTRACT_STATE_CODE" type="VARCHAR2(20)"/>
+            <column name="CONTRACT_NUMBER" type="VARCHAR2(40)"/>
+            <column name="CONTRACT_DATE_FROM" type="date"/>
+            <column name="CONTRACT_DATE_TO" type="date"/>
+            <column name="AUW_LICENSE_NUMBER" type="VARCHAR2(50)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-84">
+        <createTable tableName="PRODUCER_COMMISSION">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="RISK_SYMBOL_CODE" type="VARCHAR2(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="VALUE" type="NUMBER(8, 4)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column defaultValueComputed="-1" name="FK_PRODUCER_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-85">
+        <createTable tableName="PRODUCER_NONQUOTA_PERMISSION">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CODE" type="VARCHAR2(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column defaultValueComputed="-1" name="FK_PRODUCER_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-86">
+        <createTable tableName="PRODUCER_PAYMENT_METHOD">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PAYMENT_METHOD_CODE" type="VARCHAR2(20)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column defaultValueComputed="-1" name="FK_PRODUCER_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-87">
+        <createTable tableName="PRODUCER_PERMISSION">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="RISK_SYMBOL_CODE" type="VARCHAR2(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="UNDERWRITER_LIMIT_VALUE" type="NUMBER(15, 2)"/>
+            <column name="UNDERWRITER_LIMIT_CURRENCY" type="VARCHAR2(3)"/>
+            <column name="MAX_LIMIT_VALUE" type="NUMBER(15, 2)"/>
+            <column name="MAX_LIMIT_CURRENCY" type="VARCHAR2(3)"/>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column defaultValueComputed="-1" name="FK_PRODUCER_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-88">
+        <createTable tableName="PRODUCER_SUPPORT_PARTY">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SUPPORT_PARTY_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SUPPORT_PARTY_TYPE" type="VARCHAR2(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CONTACT_ID" type="NUMBER(38, 0)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column defaultValueComputed="-1" name="FK_PRODUCER_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-89">
+        <createTable tableName="SELLING_STRUCTURE">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DISCRIMINATOR" type="VARCHAR2(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ELEMENT_ID" type="VARCHAR2(255)"/>
+            <column name="LABEL" type="VARCHAR2(255)"/>
+            <column name="PARENT_ELEMENT_ID" type="VARCHAR2(255)"/>
+            <column name="UNIT_CODE" type="VARCHAR2(255)"/>
+            <column name="PARTY_ID" type="NUMBER(38, 0)"/>
+            <column name="PRODUCER_ID" type="NUMBER(38, 0)"/>
+            <column name="NIP" type="VARCHAR2(255)"/>
+            <column name="REGON" type="VARCHAR2(255)"/>
+            <column name="NAME" type="VARCHAR2(255)"/>
+            <column name="PRODUCER_TYPE" type="VARCHAR2(255)"/>
+            <column name="EXTERNAL_PARTY_ID" type="VARCHAR2(55)"/>
+            <column name="PESEL" type="VARCHAR2(20)"/>
+            <column name="EXTERNAL_PRODUCER_ID" type="VARCHAR2(50)"/>
+            <column name="PARTY_TYPE" type="VARCHAR2(20)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PRODUCER_NUMBER" type="VARCHAR2(50)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-90">
+        <createTable tableName="SETTLEMENT">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PARTY_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PRODUCER_NUMBER" type="VARCHAR2(255)"/>
+            <column name="PERIOD_DATE_FROM" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PERIOD_DATE_TO" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SETTLEMENT_PROCESS_TYPE" type="VARCHAR2(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SETTLEMENT_TYPE" type="VARCHAR2(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DOCUMENT_NUMBER" type="VARCHAR2(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="BALANCE_AMOUNT" type="NUMBER(15, 2)"/>
+            <column name="COLLECTION_AMOUNT" type="NUMBER(15, 2)"/>
+            <column name="COMMISSION_AMOUNT" type="NUMBER(15, 2)"/>
+            <column name="COMMISSION_TO_PAY_AMOUNT" type="NUMBER(15, 2)"/>
+            <column name="PAID_COMMISSION_AMOUNT" type="NUMBER(15, 2)"/>
+            <column name="COMMISSION_TO_INVOICE_AMOUNT" type="NUMBER(15, 2)"/>
+            <column name="CURRENCY_CODE" type="VARCHAR2(3)"/>
+            <column name="PAY_IN_AMOUNT" type="NUMBER(15, 2)"/>
+            <column name="PAY_OUT_AMOUNT" type="NUMBER(15, 2)"/>
+            <column name="INTEREST_AMOUNT" type="NUMBER(15, 2)"/>
+            <column name="SEIZURE_AMOUNT" type="NUMBER(15, 2)"/>
+            <column name="COURT_COST_AMOUNT" type="NUMBER(15, 2)"/>
+            <column name="DUE_DATE" type="date"/>
+            <column name="PAY_IN_ACCOUNT_NUMBER" type="VARCHAR2(255)"/>
+            <column name="STATUS_CODE" type="VARCHAR2(255)"/>
+            <column name="DEBT_STATUS" type="VARCHAR2(255)"/>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SVISOR_COMM_AMOUNT" type="NUMBER(15, 2)"/>
+            <column name="SVISOR_COMM_TO_INVOICE_AMOUNT" type="NUMBER(15, 2)"/>
+            <column name="SETTLEMENT_PRODUCER_TYPE" type="VARCHAR2(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PAY_OUT_ACCOUNT_NUMBER" type="VARCHAR2(255)"/>
+            <column name="TOTAL_COMPETITION_AMOUNT" type="NUMBER(15, 2)"/>
+            <column name="SVISORB_COMM_AMOUNT" type="NUMBER(15, 2)"/>
+            <column name="SVISORB_COMM_TO_INVOICE_AMOUNT" type="NUMBER(15, 2)"/>
+            <column defaultValue="" name="CLEARING_OPERATOR_EMAIL" type="VARCHAR2(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="EXPECTED_PAY_OUT_DATE" type="date"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-91">
+        <createTable tableName="SETTLEMENT_COMPETITION">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SETTLEMENT_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="NAME" type="VARCHAR2(255)"/>
+            <column name="AMOUNT" type="NUMBER(15, 2)"/>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-92">
+        <createTable tableName="SETTLEMENT_DETAIL">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SETTLEMENT_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SELLER_NUMBER" type="VARCHAR2(255)"/>
+            <column name="SELLER_NAME" type="VARCHAR2(255)"/>
+            <column name="POLICY_NUMBER" type="VARCHAR2(255)"/>
+            <column name="POLICY_ID" type="NUMBER(38, 0)"/>
+            <column name="INSURED_NAME" type="VARCHAR2(255)"/>
+            <column name="NON_INVOICED_COMMISSION_AMOUNT" type="NUMBER(15, 2)"/>
+            <column name="INVOICED_COMMISSION_AMOUNT" type="NUMBER(15, 2)"/>
+            <column name="COLLECTION_AMOUNT" type="NUMBER(15, 2)"/>
+            <column name="PAYMENT_METHOD" type="VARCHAR2(255)"/>
+            <column name="INVOICE_NUMBER" type="VARCHAR2(255)"/>
+            <column name="POLICY_SOURCE_SYSTEM" type="VARCHAR2(255)"/>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-93">
+        <createTable tableName="SETTLEMENT_PRODUCER_STATE">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PARTY_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PRODUCER_NUMBER" type="VARCHAR2(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="LAST_SETTLEMENT_PROCESS_TYPE" type="VARCHAR2(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="LAST_SETTLEMENT_PRODUCER_TYPE" type="VARCHAR2(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="LAST_SETTLEMENT_TYPE" type="VARCHAR2(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="TOTAL_BALANCE_AMOUNT" type="NUMBER(15, 2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="COMMISSION_TO_INVOICE_AMOUNT" type="NUMBER(15, 2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="LAST_COMM_TO_INVOICE_AMOUNT" type="NUMBER(15, 2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="LAST_PERIOD_BALANCE_AMOUNT" type="NUMBER(15, 2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="LAST_PERIOD_DATE_FROM" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="LAST_PERIOD_DATE_TO" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="TOTAL_ARREARS_AMOUNT" type="NUMBER(15, 2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="TOTAL_SEIZURE_AMOUNT" type="NUMBER(15, 2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-94">
+        <createTable tableName="SETTLEMENT_TRANSACTION">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SETTLEMENT_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="AMOUNT" type="NUMBER(15, 2)"/>
+            <column name="PAYMENT_DATE" type="date"/>
+            <column name="POSTING_DATE" type="date"/>
+            <column name="TITLE" type="VARCHAR2(255)"/>
+            <column name="TYPE" type="VARCHAR2(255)"/>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-95">
+        <createTable tableName="SOWA_ATTRIBUTE">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SOWA_POLICY_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ATTRIBUTE_CODE" type="VARCHAR2(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ATTRIBUTE_VALUE" type="VARCHAR2(200)"/>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-96">
+        <createTable tableName="SOWA_PARTY">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SOWA_POLICY_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PARTY_PERSONAL_ID" type="VARCHAR2(14)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PARTY_PERSONAL_ID_TYPE" type="VARCHAR2(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PARTY_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PARTY_ROLE" type="VARCHAR2(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-97">
+        <createTable tableName="SOWA_POLICY">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="POLICY_NUMBER" type="VARCHAR2(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PRODUCT_LINE" type="VARCHAR2(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="REGISTRATION_NUMBER" type="VARCHAR2(10)"/>
+            <column name="VIN" type="VARCHAR2(20)"/>
+            <column name="POSTAL_CODE" type="VARCHAR2(6)"/>
+            <column name="STATUS" type="VARCHAR2(10)"/>
+            <column name="SUB_STATUS" type="VARCHAR2(10)"/>
+            <column name="INSURANCE_PERIOD_FROM" type="TIMESTAMP(3)"/>
+            <column name="INSURANCE_PERIOD_TO" type="TIMESTAMP(3)"/>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-98">
+        <createTable tableName="SOWA_PREV_RISK">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SOWA_POLICY_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PRODUCT_CODE" type="VARCHAR2(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="RISK_CODE" type="VARCHAR2(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-99">
+        <createTable tableName="SOWA_PREV_RISK_ATTRIBUTE">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SOWA_PREV_RISK_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ATTRIBUTE_CODE" type="VARCHAR2(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ATTRIBUTE_VALUE" type="VARCHAR2(200)"/>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-100">
+        <createTable tableName="SOWA_RISK">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SOWA_POLICY_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PRODUCT_CODE" type="VARCHAR2(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="RISK_CODE" type="VARCHAR2(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-101">
+        <createTable tableName="SOWA_RISK_ATTRIBUTE">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SOWA_RISK_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ATTRIBUTE_CODE" type="VARCHAR2(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ATTRIBUTE_VALUE" type="VARCHAR2(200)"/>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-102">
+        <createTable tableName="SOWA_RISK_VARIANT">
+            <column name="SOWA_VARIANT_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SOWA_RISK_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-103">
+        <createTable tableName="SOWA_VARIANT">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SOWA_POLICY_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="VARIANT_CODE" type="VARCHAR2(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="VARIANT_DESC" type="VARCHAR2(200)"/>
+            <column name="VARIANT_KIND" type="VARCHAR2(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-104">
+        <createTable tableName="SOWA_VARIANT_ATTRIBUTE">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SOWA_VARIANT_ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ATTRIBUTE_CODE" type="VARCHAR2(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ATTRIBUTE_VALUE" type="VARCHAR2(200)"/>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-105">
+        <createTable tableName="STRUCTURE_ELEMENT">
+            <column name="ID" type="VARCHAR2(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CHILDLESS" type="NUMBER(1, 0)"/>
+            <column name="FULL_NAME" type="VARCHAR2(255)"/>
+            <column name="NETWORK" type="VARCHAR2(255)"/>
+            <column name="ORGANIZATION_UNIT_ID" type="VARCHAR2(255)"/>
+            <column name="LEVEL00" type="VARCHAR2(20)"/>
+            <column name="LEVEL01" type="VARCHAR2(20)"/>
+            <column name="LEVEL02" type="VARCHAR2(20)"/>
+            <column name="LEVEL03" type="VARCHAR2(20)"/>
+            <column name="LEVEL04" type="VARCHAR2(20)"/>
+            <column name="LEVEL05" type="VARCHAR2(20)"/>
+            <column name="LEVEL06" type="VARCHAR2(20)"/>
+            <column name="LEVEL07" type="VARCHAR2(20)"/>
+            <column name="LEVEL08" type="VARCHAR2(20)"/>
+            <column name="LEVEL09" type="VARCHAR2(20)"/>
+            <column name="LEVEL10" type="VARCHAR2(20)"/>
+            <column name="LEVEL11" type="VARCHAR2(20)"/>
+            <column name="LEVEL12" type="VARCHAR2(20)"/>
+            <column name="SUBJECT_ID" type="NUMBER(38, 0)"/>
+            <column name="PRODUCER_TYPE" type="VARCHAR2(55)"/>
+            <column name="POSITION" type="VARCHAR2(55)"/>
+            <column name="PARTY_ID" type="NUMBER(38, 0)"/>
+            <column name="PRODUCER_ID" type="NUMBER(38, 0)"/>
+            <column name="NIP" type="VARCHAR2(10)"/>
+            <column name="REGON" type="VARCHAR2(14)"/>
+            <column name="PARENT_ID" type="VARCHAR2(55)"/>
+            <column name="STRUCTURE_ELEMENT_LEVEL" type="NUMBER(10, 0)"/>
+            <column name="EXTERNAL_PARTY_ID" type="VARCHAR2(55)"/>
+            <column name="EXTERNAL_PRODUCER_ID" type="NUMBER(38, 0)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-106">
+        <createTable tableName="VERSION">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="IMPORT_DATE" type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ODS_VERSION" type="NUMBER(38, 0)"/>
+            <column defaultValueNumeric="0" name="VERSION" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CREATION_DATE" type="TIMESTAMP(3)"/>
+            <column name="MODIFICATION_DATE" type="TIMESTAMP(3)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-107">
+        <createIndex indexName="ADDRESS_PKEY" tableName="ADDRESS" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="ADDRESS_PKEY" tableName="ADDRESS"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-108">
+        <createIndex indexName="CONSENT_PKEY" tableName="CONSENT" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="CONSENT_PKEY" tableName="CONSENT"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-109">
+        <createIndex indexName="CONTACT_PKEY" tableName="CONTACT" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="CONTACT_PKEY" tableName="CONTACT"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-110">
+        <createIndex indexName="DOCUMENT_PKEY" tableName="DOCUMENT" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="DOCUMENT_PKEY" tableName="DOCUMENT"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-111">
+        <createIndex indexName="E_DE_INDEX_PARTY_PKEY" tableName="EVENT_DE_INDEX_PARTY" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="E_DE_INDEX_PARTY_PKEY" tableName="EVENT_DE_INDEX_PARTY"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-112">
+        <createIndex indexName="E_GOLDEN_PARTY_CREATED_PKEY" tableName="EVENT_GOLDEN_PARTY_CREATED" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="E_GOLDEN_PARTY_CREATED_PKEY" tableName="EVENT_GOLDEN_PARTY_CREATED"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-114">
+        <createIndex indexName="E_PARTY_CLUSTER_CREATED_PKEY" tableName="EVENT_PARTY_CLUSTER_CREATED" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="E_PARTY_CLUSTER_CREATED_PKEY" tableName="EVENT_PARTY_CLUSTER_CREATED"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-115">
+        <createIndex indexName="E_SOWA_CREATED_PKEY" tableName="EVENT_SOWA_CREATED" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="E_SOWA_CREATED_PKEY" tableName="EVENT_SOWA_CREATED"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-116">
+        <createIndex indexName="E_SOWA_DELETED_PKEY" tableName="EVENT_SOWA_DELETED" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="E_SOWA_DELETED_PKEY" tableName="EVENT_SOWA_DELETED"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-117">
+        <createIndex indexName="E_SOWA_UPDATED_PKEY" tableName="EVENT_SOWA_UPDATED" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="E_SOWA_UPDATED_PKEY" tableName="EVENT_SOWA_UPDATED"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-118">
+        <createIndex indexName="GR_CONSENT_PKEY" tableName="GR_CONSENT" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="GR_CONSENT_PKEY" tableName="GR_CONSENT"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-119">
+        <createIndex indexName="GR_CONTACT_PKEY" tableName="GR_CONTACT" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="GR_CONTACT_PKEY" tableName="GR_CONTACT"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-120">
+        <createIndex indexName="GR_DOCUMENT_PKEY" tableName="GR_DOCUMENT" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="GR_DOCUMENT_PKEY"  tableName="GR_DOCUMENT"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-121">
+        <createIndex indexName="GR_LOCATION_PKEY" tableName="GR_LOCATION" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="GR_LOCATION_PKEY"  tableName="GR_LOCATION"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-122">
+        <createIndex indexName="GR_PARTY_PKEY" tableName="GR_PARTY" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="GR_PARTY_PKEY"  tableName="GR_PARTY"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-123">
+        <createIndex indexName="GR_RATING_PKEY" tableName="GR_RATING" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="GR_RATING_PKEY" tableName="GR_RATING"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-124">
+        <createIndex indexName="GR_RELATION_PKEY" tableName="GR_RELATION" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="GR_RELATION_PKEY" tableName="GR_RELATION"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-125">
+        <createIndex indexName="ODS_SSE_PKEY" tableName="SELLING_STRUCTURE" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="ODS_SSE_PKEY" tableName="SELLING_STRUCTURE"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-126">
+        <createIndex indexName="PARTY_BANK_ACCOUNT_PKEY" tableName="PARTY_BANK_ACCOUNT" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="PARTY_BANK_ACCOUNT_PKEY" tableName="PARTY_BANK_ACCOUNT"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-127">
+        <createIndex indexName="PARTY_CLUSTER_PKEY" tableName="PARTY_CLUSTER" unique="true">
+            <column name="PARENT_PARTY_ID"/>
+            <column name="PARTY_ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="PARENT_PARTY_ID, PARTY_ID" constraintName="PARTY_CLUSTER_PKEY" tableName="PARTY_CLUSTER"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-128">
+        <createIndex indexName="PARTY_LOCATION_PKEY" tableName="PARTY_LOCATION" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="PARTY_LOCATION_PKEY" tableName="PARTY_LOCATION"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-129">
+        <createIndex indexName="PARTY_NRK_PKEY" tableName="PARTY_RATING" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="PARTY_NRK_PKEY" tableName="PARTY_RATING"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-130">
+        <createIndex indexName="PARTY_RELATION_PKEY" tableName="PARTY_RELATION" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="PARTY_RELATION_PKEY" tableName="PARTY_RELATION"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-131">
+        <createIndex indexName="PROCESS_PKEY" tableName="PROCESS" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="PROCESS_PKEY" tableName="PROCESS"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-132">
+        <createIndex indexName="PRODUCER_PKEY" tableName="PRODUCER" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="PRODUCER_PKEY" tableName="PRODUCER"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-133">
+        <createIndex indexName="P_C_PKEY" tableName="PRODUCER_COMMISSION" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="P_C_PKEY" tableName="PRODUCER_COMMISSION"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-134">
+        <createIndex indexName="P_N_P_PKEY" tableName="PRODUCER_NONQUOTA_PERMISSION" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="P_N_P_PKEY" tableName="PRODUCER_NONQUOTA_PERMISSION"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-135">
+        <createIndex indexName="P_P_M_PKEY" tableName="PRODUCER_PAYMENT_METHOD" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="P_P_M_PKEY" tableName="PRODUCER_PAYMENT_METHOD"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-136">
+        <createIndex indexName="P_P_PKEY" tableName="PRODUCER_PERMISSION" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="P_P_PKEY" tableName="PRODUCER_PERMISSION"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-137">
+        <createIndex indexName="P_S_P_PKEY" tableName="PRODUCER_SUPPORT_PARTY" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="P_S_P_PKEY" tableName="PRODUCER_SUPPORT_PARTY"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-138">
+        <createIndex indexName="SETTLEMENT_COMPETITION_PKEY" tableName="SETTLEMENT_COMPETITION" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="SETTLEMENT_COMPETITION_PKEY" tableName="SETTLEMENT_COMPETITION"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-139">
+        <createIndex indexName="SETTLEMENT_DETAIL_PKEY" tableName="SETTLEMENT_DETAIL" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="SETTLEMENT_DETAIL_PKEY" tableName="SETTLEMENT_DETAIL"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-140">
+        <createIndex indexName="SETTLEMENT_PKEY" tableName="SETTLEMENT" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="SETTLEMENT_PKEY" tableName="SETTLEMENT"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-141">
+        <createIndex indexName="SETTLEMENT_PRODUCER_STATE_PKEY" tableName="SETTLEMENT_PRODUCER_STATE" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="SETTLEMENT_PRODUCER_STATE_PKEY" tableName="SETTLEMENT_PRODUCER_STATE"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-142">
+        <createIndex indexName="SETTLEMENT_TRANSACTION_PKEY" tableName="SETTLEMENT_TRANSACTION" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="SETTLEMENT_TRANSACTION_PKEY" tableName="SETTLEMENT_TRANSACTION"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-143">
+        <createIndex indexName="STRUCTURE_ELEMENT_PKEY" tableName="STRUCTURE_ELEMENT" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="STRUCTURE_ELEMENT_PKEY" tableName="STRUCTURE_ELEMENT"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-144">
+        <createIndex indexName="SYS_C007844" tableName="PARTY" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="SYS_C007844" tableName="PARTY"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-145">
+        <createIndex indexName="S_PARTY_PKEY" tableName="SOWA_PARTY" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="S_PARTY_PKEY" tableName="SOWA_PARTY"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-146">
+        <createIndex indexName="S_P_A_PKEY" tableName="SOWA_ATTRIBUTE" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="S_P_A_PKEY" tableName="SOWA_ATTRIBUTE"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-147">
+        <createIndex indexName="S_P_PKEY" tableName="SOWA_POLICY" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="S_P_PKEY" tableName="SOWA_POLICY"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-148">
+        <createIndex indexName="S_P_R_A_PKEY" tableName="SOWA_PREV_RISK_ATTRIBUTE" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="S_P_R_A_PKEY" tableName="SOWA_PREV_RISK_ATTRIBUTE"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-149">
+        <createIndex indexName="S_P_R_PKEY" tableName="SOWA_PREV_RISK" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="S_P_R_PKEY" tableName="SOWA_PREV_RISK"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-150">
+        <createIndex indexName="S_R_A_PKEY" tableName="SOWA_RISK_ATTRIBUTE" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="S_R_A_PKEY" tableName="SOWA_RISK_ATTRIBUTE"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-151">
+        <createIndex indexName="S_R_PKEY" tableName="SOWA_RISK" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="S_R_PKEY" tableName="SOWA_RISK"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-152">
+        <createIndex indexName="S_R_V_PKEY" tableName="SOWA_RISK_VARIANT" unique="true">
+            <column name="SOWA_VARIANT_ID"/>
+            <column name="SOWA_RISK_ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="SOWA_VARIANT_ID, SOWA_RISK_ID" constraintName="S_R_V_PKEY" tableName="SOWA_RISK_VARIANT"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-153">
+        <createIndex indexName="S_V_A_PKEY" tableName="SOWA_VARIANT_ATTRIBUTE" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="S_V_A_PKEY" tableName="SOWA_VARIANT_ATTRIBUTE"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-154">
+        <createIndex indexName="S_V_PKEY" tableName="SOWA_VARIANT" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="S_V_PKEY" tableName="SOWA_VARIANT"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-155">
+        <createIndex indexName="VERSION_PK" tableName="VERSION" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="VERSION_PK" tableName="VERSION"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-156">
+        <createIndex indexName="PROCESS_UNIQUE_STATE" tableName="PROCESS" unique="true">
+            <column name="PROCESS_NAME"/>
+            <column name="PROCESS_UID"/>
+            <column name="STATE"/>
+            <column name="END_DATE"/>
+        </createIndex>
+        <addUniqueConstraint columnNames="PROCESS_NAME, PROCESS_UID, STATE, END_DATE" constraintName="PROCESS_UNIQUE_STATE" tableName="PROCESS"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-157">
+        <createIndex indexName="STRUCTURE_ELEMENT_UNIQUE" tableName="STRUCTURE_ELEMENT" unique="true">
+            <column name="ORGANIZATION_UNIT_ID"/>
+        </createIndex>
+        <addUniqueConstraint columnNames="ORGANIZATION_UNIT_ID" constraintName="STRUCTURE_ELEMENT_UNIQUE" tableName="STRUCTURE_ELEMENT"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-160">
+        <createIndex indexName="E_PARTY_CLUSTER_CREATED_UNIQ" tableName="EVENT_PARTY_CLUSTER_CREATED" unique="true">
+            <column name="PARENT_PARTY_ID"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-161">
+        <createIndex indexName="IX_PARTY_EXTERNAL_ID" tableName="PARTY">
+            <column name="EXTERNAL_ID"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-162">
+        <createIndex indexName="IX_PRODUCER_UNIT_CODE" tableName="PRODUCER">
+            <column name="UNIT_CODE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-163">
+        <createIndex indexName="I_PARTY_CLUSTER__PARTY_ID" tableName="PARTY_CLUSTER">
+            <column name="PARTY_ID"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-164">
+        <createIndex indexName="PRODUCER_C_S_C_INDEX" tableName="PRODUCER">
+            <column name="CONTRACT_STATE_CODE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-165">
+        <createIndex indexName="PRODUCER_P_T_INDEX" tableName="PRODUCER">
+            <column name="PRODUCER_TYPE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-166">
+        <createIndex indexName="P_C_RISK_SYMBOL_INDEX" tableName="PRODUCER_COMMISSION">
+            <column name="RISK_SYMBOL_CODE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-167">
+        <createIndex indexName="S_E_NETWORK_INDEX" tableName="STRUCTURE_ELEMENT">
+            <column name="NETWORK"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-168">
+        <addForeignKeyConstraint baseColumnNames="ADDRESS_ID" baseTableName="PARTY_LOCATION" constraintName="FK_PARTY_LOCATION_ADDRESS" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="ADDRESS"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-169">
+        <addForeignKeyConstraint baseColumnNames="GR_PARTY_ID" baseTableName="GR_CONSENT" constraintName="GR_CONSENT_GR_PARTY_FKEY" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="GR_PARTY"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-170">
+        <addForeignKeyConstraint baseColumnNames="GR_PARTY_ID" baseTableName="GR_CONTACT" constraintName="GR_CONTACT_GR_PARTY_FKEY" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="GR_PARTY"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-171">
+        <addForeignKeyConstraint baseColumnNames="GR_PARTY_ID" baseTableName="GR_DOCUMENT" constraintName="GR_DOCUMENT_GR_PARTY_FKEY" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="GR_PARTY"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-172">
+        <addForeignKeyConstraint baseColumnNames="GR_PARTY_ID" baseTableName="GR_LOCATION" constraintName="GR_LOCATION_GR_PARTY_FKEY" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="GR_PARTY"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-173">
+        <addForeignKeyConstraint baseColumnNames="GR_PARTY_ID" baseTableName="GR_RATING" constraintName="GR_RATING_GR_PARTY_FKEY" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="GR_PARTY"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-174">
+        <addForeignKeyConstraint baseColumnNames="GR_PARTY_ID" baseTableName="GR_RELATION" constraintName="GR_RELATION_GR_PARTY_FKEY" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="GR_PARTY"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-175">
+        <addForeignKeyConstraint baseColumnNames="FK_PRODUCER_ID" baseTableName="PRODUCER_COMMISSION" constraintName="P_C_FK" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="PRODUCER"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-176">
+        <addForeignKeyConstraint baseColumnNames="FK_PRODUCER_ID" baseTableName="PRODUCER_NONQUOTA_PERMISSION" constraintName="P_N_P_FK" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="PRODUCER"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-177">
+        <addForeignKeyConstraint baseColumnNames="FK_PRODUCER_ID" baseTableName="PRODUCER_PERMISSION" constraintName="P_P_FK" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="PRODUCER"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-178">
+        <addForeignKeyConstraint baseColumnNames="FK_PRODUCER_ID" baseTableName="PRODUCER_PAYMENT_METHOD" constraintName="P_P_M_FK" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="PRODUCER"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-179">
+        <addForeignKeyConstraint baseColumnNames="FK_PRODUCER_ID" baseTableName="PRODUCER_SUPPORT_PARTY" constraintName="P_S_P_FK" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="PRODUCER"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-180">
+        <addForeignKeyConstraint baseColumnNames="SETTLEMENT_ID" baseTableName="SETTLEMENT_COMPETITION" constraintName="SETTL_COMPETITION_SETTL_FKEY" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="SETTLEMENT"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-181">
+        <addForeignKeyConstraint baseColumnNames="SETTLEMENT_ID" baseTableName="SETTLEMENT_DETAIL" constraintName="SETTL_DETAIL_SETTL_FKEY" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="SETTLEMENT"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-182">
+        <addForeignKeyConstraint baseColumnNames="SETTLEMENT_ID" baseTableName="SETTLEMENT_TRANSACTION" constraintName="SETTL_TRANS_SETTL_FKEY" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="SETTLEMENT"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-183">
+        <addForeignKeyConstraint baseColumnNames="SOWA_POLICY_ID" baseTableName="SOWA_PARTY" constraintName="S_PARTY_FKEY" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="SOWA_POLICY"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-184">
+        <addForeignKeyConstraint baseColumnNames="SOWA_POLICY_ID" baseTableName="SOWA_ATTRIBUTE" constraintName="S_P_A_FKEY" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="SOWA_POLICY"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-185">
+        <addForeignKeyConstraint baseColumnNames="SOWA_PREV_RISK_ID" baseTableName="SOWA_PREV_RISK_ATTRIBUTE" constraintName="S_P_R_A_FKEY" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="SOWA_PREV_RISK"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-186">
+        <addForeignKeyConstraint baseColumnNames="SOWA_POLICY_ID" baseTableName="SOWA_PREV_RISK" constraintName="S_P_R_FKEY" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="SOWA_POLICY"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-187">
+        <addForeignKeyConstraint baseColumnNames="SOWA_RISK_ID" baseTableName="SOWA_RISK_ATTRIBUTE" constraintName="S_R_A_FKEY" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="SOWA_RISK"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-188">
+        <addForeignKeyConstraint baseColumnNames="SOWA_POLICY_ID" baseTableName="SOWA_RISK" constraintName="S_R_FKEY" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="SOWA_POLICY"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-189">
+        <addForeignKeyConstraint baseColumnNames="SOWA_RISK_ID" baseTableName="SOWA_RISK_VARIANT" constraintName="S_R_V_R_FKEY" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="SOWA_RISK"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-190">
+        <addForeignKeyConstraint baseColumnNames="SOWA_VARIANT_ID" baseTableName="SOWA_RISK_VARIANT" constraintName="S_R_V_V_FKEY" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="SOWA_VARIANT"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-191">
+        <addForeignKeyConstraint baseColumnNames="SOWA_VARIANT_ID" baseTableName="SOWA_VARIANT_ATTRIBUTE" constraintName="S_V_A_FKEY" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="SOWA_VARIANT"/>
+    </changeSet>
+    <changeSet author="ptkaczyk (generated)" id="1479470963859-192">
+        <addForeignKeyConstraint baseColumnNames="SOWA_POLICY_ID" baseTableName="SOWA_VARIANT" constraintName="S_V_FKEY" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="ID" referencedTableName="SOWA_POLICY"/>
+    </changeSet>
+</databaseChangeLog>

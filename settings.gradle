@@ -1,14 +1,2 @@
-pluginManagement {
-	repositories {
-		maven {
-			url 'maven-repo'
-		}
-		gradlePluginPortal()
-		ivy {
-			url 'ivy-repo'
-		}
-	}
-}
-
 rootProject.name = 'jenkins-demo'
 include 'jenkins-demo-app'

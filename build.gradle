@@ -12,24 +12,51 @@ plugins {
 	id 'org.springframework.boot' version '1.5.9.RELEASE' apply false
 }
 
-group = 'com.github.tdakowicz'
-version = '0.0.1-SNAPSHOT'
+scmVersion {
+	tag {
+		prefix = rootProject.name
+	}
+	versionCreator 'versionWithBranch'
+}
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sonarqube {
+	properties {
+		property 'sonar.projectName', 'jenkins-demo'
+		property 'sonar.exclusions', "**/generated-sources/**"
+		property "sonar.jacoco.reportPath", "${project.buildDir}/jacoco/test.exec"
+	}
+}
 
-subprojects {
+allprojects {
+	apply plugin: 'java'
+	apply plugin: 'groovy'
+	apply plugin: 'checkstyle'
+	apply plugin: 'net.linguica.maven-settings'
+	apply plugin: 'com.bmuschko.nexus'
+
+	group = 'com.github.tdakowicz'
+	version = scmVersion.version
+
+	sourceCompatibility = 1.8
+	targetCompatibility = 1.8
+
 	repositories {
 		mavenLocal()
 		mavenCentral()
 		maven { name 'nexus-public'; url 'https://nexus.decerto.pl/content/groups/public' }
 		maven { name 'nexus-decerto'; url 'https://nexus.decerto.pl/content/groups/decerto' }
 	}
+
 	test {
 		testLogging {
 			events "passed", "skipped", "failed"
 			showStandardStreams = true
 		}
+	}
+
+	checkstyle {
+		configFile = rootProject.file('checkstyle.xml')
+		toolVersion = '7.0'
 	}
 }
 

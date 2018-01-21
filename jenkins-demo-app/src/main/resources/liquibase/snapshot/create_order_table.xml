@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+		xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+	<changeSet id="create_order_table" author="tdakowicz">
+		<createTable tableName="ORDER">
+			<column name="ID" type="NUMBER(8)"/>
+			<column name="DESCRIPTION" type="VARCHAR2(100)"/>
+			<column name="PRODUCTID" type="NUMBER(8)"/>
+			<column name="ORDERDATE" type="TIMESTAMP"/>
+		</createTable>
+	</changeSet>
+
+	<changeSet id="add_primary_key" author="tdakowicz">
+		<addPrimaryKey tableName="ORDER" columnNames="ID"/>
+	</changeSet>
+
+</databaseChangeLog>
