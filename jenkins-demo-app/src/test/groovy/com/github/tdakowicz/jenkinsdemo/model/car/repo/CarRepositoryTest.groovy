@@ -4,6 +4,7 @@ import com.github.tdakowicz.jenkinsdemo.BaseIntegrationTest
 import com.github.tdakowicz.jenkinsdemo.model.car.domain.Car
 import org.springframework.beans.factory.annotation.Autowired
 
+import javax.transaction.Transactional
 import java.time.LocalDateTime
 
 class CarRepositoryTest extends BaseIntegrationTest {
@@ -13,6 +14,7 @@ class CarRepositoryTest extends BaseIntegrationTest {
 	@Autowired
 	CarRepository carRepository
 
+	@Transactional
 	def "should save a car entity"() {
 		given:
 		Car car = new Car()
@@ -34,6 +36,7 @@ class CarRepositoryTest extends BaseIntegrationTest {
 		}
 	}
 
+	@Transactional
 	def "should find car by model"() {
 		given:
 		Car car = new Car(model: 'ABC', modelId: 1234L, manufactureDate: NOW)
@@ -46,7 +49,7 @@ class CarRepositoryTest extends BaseIntegrationTest {
 		cars
 		cars.size() == 1
 		with(cars.first()) {
-			model == "ABC"
+			model == 'ABC'
 			modelId == 1234L
 			manufactureDate == NOW
 		}

@@ -6,13 +6,13 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-jdbc')
 	compile('org.liquibase:liquibase-core')
 	compile('org.springframework.boot:spring-boot-starter-web')
-	compile('com.zaxxer:HikariCP:2.4.6')
-	compile('com.oracle:ojdbc6:11.2.0.3.0')
+	compile('com.zaxxer:HikariCP')
+	compile('com.oracle:ojdbc6')
 	compileOnly('org.projectlombok:lombok')
 
 	testCompile('org.springframework.boot:spring-boot-starter-test')
-	testCompile('org.spockframework:spock-spring:1.0-groovy-2.4')
-	testCompile('org.codehaus.groovy:groovy-all:2.4.7')
+	testCompile('org.spockframework:spock-spring')
+	testCompile('org.codehaus.groovy:groovy-all')
 	testCompile('org.hsqldb:hsqldb')
 
 	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
