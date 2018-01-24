@@ -1,4 +1,4 @@
-package com.github.tdakowicz.jenkinsdemo.model.order.domain;
+package com.github.tdakowicz.jenkinsdemo.model.car.domain;
 
 import java.time.LocalDateTime;
 import javax.persistence.Entity;
@@ -9,18 +9,18 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "ORDER")
+@Table(name = "CAR")
 @Data
 @NoArgsConstructor
-public class Order {
+public class Car {
 
 	@Id
 	@GeneratedValue
 	private Long id;
 
-	private String description;
+	private String model;
 
-	private LocalDateTime orderDate;
+	private Long modelId;
 
-	private Long productId;
+	private LocalDateTime manufactureDate;
 }
