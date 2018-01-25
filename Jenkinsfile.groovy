@@ -1,6 +1,11 @@
 pipeline {
     agent any
     stages {
+        stage('Checkout SCM') {
+            steps {
+                git 'https://github.com/tdakowicz/jenkins-sample-app'
+            }
+        }
         stage('Build') {
             steps {
                 sh './gradlew clean check --parallel --configure-on-demand --no-daemon'
