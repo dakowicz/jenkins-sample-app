@@ -11,9 +11,10 @@ pipeline {
 //                git 'https://github.com/tdakowicz/jenkins-sample-app'
 //            }
 //        }
-        stage('Build docker image with docker compose') {
+        stage('Build and run docker container') {
             steps {
                 dir(env.DOCKER_COMPOSE_DIR) {
+                    sh 'docker-compose build'
                     sh 'docker-compose up -d'
                 }
             }
